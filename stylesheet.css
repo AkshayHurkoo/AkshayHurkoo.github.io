@@ -1,7 +1,6 @@
 body {
         margin: 0;
         padding: 0;
-        background-color: black;
         background-image: url(/images/wallpaper.jpg);
         background-size: auto;
         background-repeat: no-repeat;
@@ -10,27 +9,28 @@ body {
 
 h1{
     text-align: center;
-    color:blue;
-    font-family:cursive;
-    font-style: italic;
-    
+    color:white;
+    font-family:'tangerine', sans-serif;
+    font-size: 50px;
+  animation-name: h1;
+    animation-duration: 10s;
 }
 
- 
 section#Container {
-        text-align: center;
-        position: relative;
+   text-align: center;
+   position: relative;
     }
 
-
 .myslides img{
-    max-width: 50%;
-    max-height: 200px;
-    width: 100%;
-    height: 650px;
-       border-radius: 15px;
+    width: 95%;
+    height: auto;
+    border-radius: 15px;
     border: 2px solid black;
-      
+  animation-name: slideshow; 
+    animation-duration: 5s; 
+    animation-iteration-count:infinite;
+  transition: 1s;
+  
 }
 
 .dot {
@@ -38,7 +38,7 @@ section#Container {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: black;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 1.6s ease;
@@ -48,15 +48,36 @@ section#Container {
   background-color: red;
 }
 
-
-@media only screen and (min-width: 500px) {
-    h1{
-    text-align: center;
-    color:hotpink;
-    font-family:cursive;
-    font-style: italic;
+@media only screen and (min-width:600px)
+{
+  h1{
+      text-align: center;
+    color:white;
+    font-family:'tangerine', sans-serif;
+    font-size: 50px;
+  }
     
+.myslides img{
+    width: 75%;
+    border-radius: 15px;
+    border: 2px solid black;
+  transition: 2s;
 }
+}
+
+@keyframes slideshow {
+  0%, 100%{ opacity: 0.2 }
+  100% { opacity: 1 }
+
+
+}
+@keyframes h1 {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 
