@@ -9,11 +9,20 @@ body {
 
 h1{
     text-align: center;
-    color:white;
+    color:gold;
     font-family:'tangerine', sans-serif;
     font-size: 50px;
-  animation-name: h1;
-    animation-duration: 10s;
+    animation-name: h1;
+    animation-duration: 2s;
+}
+
+section#comingSoon{
+    text-align: center;
+    color:gold;
+    font-family:'tangerine', sans-serif;
+    font-size: 50px;
+    animation-name: comingSoon;
+    animation-duration: 15s;
 }
 
 section#Container {
@@ -26,32 +35,17 @@ section#Container {
     height: auto;
     border-radius: 15px;
     border: 2px solid black;
-  animation-name: slideshow; 
-    animation-duration: 5s; 
+    animation-name: slideshow; 
+    animation-duration: 8s; 
     animation-iteration-count:infinite;
-  transition: 1s;
+    transition: 1s;
   
-}
-
-.dot {
-  cursor:pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 1.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: red;
 }
 
 @media only screen and (min-width:600px)
 {
   h1{
-      text-align: center;
+    text-align: center;
     color:white;
     font-family:'tangerine', sans-serif;
     font-size: 50px;
@@ -61,22 +55,40 @@ section#Container {
     width: 75%;
     border-radius: 15px;
     border: 2px solid black;
-  transition: 2s;
+    transition: 2s;
 }
 }
 
 @keyframes slideshow {
-  0%, 100%{ opacity: 0.2 }
-  100% { opacity: 1 }
-
-
+     from{
+    opacity: 0;
+    transform:translateY(-40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+ 
+  
 }
 @keyframes h1 {
+  from{
+    opacity: 0;
+    transform:translateY(-40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+  @keyframes comingSoon {
   from{
     opacity: 0;
   }
   to{
     opacity: 1;
+
+    
   }
 }
 

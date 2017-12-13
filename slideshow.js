@@ -5,7 +5,7 @@ showSlides();
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("myslides");
-    var dots = document.getElementsByClassName("dot");
+    var dots = document.getElementsByClassName("myslides");
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
     }
@@ -16,7 +16,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
+    setTimeout(showSlides, 8000); // Change image every 8 seconds
      
 }
 
