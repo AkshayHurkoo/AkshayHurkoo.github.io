@@ -1,94 +1,93 @@
 body {
-        margin: 0;
-        padding: 0;
-        background-image: url(images/wallpaper.jpg);
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-h1{
-    text-align: center;
-    color:gold;
-    font-family:'tangerine', sans-serif;
-    font-size: 50px;
-    animation-name: h1;
-    animation-duration: 2s;
+  margin: 0;
+  padding: 0;
+  background-image: url(images/wallpaper.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-section#comingSoon{
-    text-align: center;
-    color:gold;
-    font-family:'tangerine', sans-serif;
-    font-size: 50px;
-    animation-name: comingSoon;
-    animation-duration: 15s;
+h1 {
+  text-align: center;
+  color: gold;
+  font-family: 'tangerine', sans-serif;
+  font-size: 50px;
+  animation-name: h1;
+  animation-duration: 2s;
+}
+
+section#comingSoon {
+  text-align: center;
+  color: gold;
+  font-family: 'tangerine', sans-serif;
+  font-size: 50px;
+  animation-name: comingSoon;
+  animation-duration: 15s;
 }
 
 section#Container {
-   text-align: center;
-   position: relative;
-    }
-
-.myslides img{
-    width: 95%;
-    height: auto;
-    border-radius: 15px;
-    border: 2px solid black;
-    animation-name: slideshow; 
-    animation-duration: 8s; 
-    animation-iteration-count:infinite;
-    transition: 1s;
-  
+  text-align: center;
+  position: relative;
 }
 
-@media only screen and (min-width:600px)
-{
-  h1{
+.myslides img {
+  width: 95%;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid black;
+  animation-name: slideshow;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  transition: 1s;
+
+}
+
+@media only screen and (min-width:600px) {
+  h1 {
     text-align: center;
-    font-family:'tangerine', sans-serif;
+    font-family: 'tangerine', sans-serif;
     font-size: 50px;
   }
-    
-.myslides img{
+
+  .myslides img {
     width: 75%;
     border-radius: 15px;
     border: 2px solid black;
     transition: 2s;
-}
+  }
 }
 
 @keyframes slideshow {
-     from{
+  from {
     opacity: 0;
-    transform:translateY(-40px);
+    transform: translateY(-40px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0px);
   }
- 
-  
+
+
 }
+
 @keyframes h1 {
-  from{
+  from {
     opacity: 0;
-    transform:translateY(-40px);
+    transform: translateY(-40px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0px);
   }
 }
-  @keyframes comingSoon {
-  from{
+
+@keyframes comingSoon {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
 
-    
+
   }
 }
-
-
