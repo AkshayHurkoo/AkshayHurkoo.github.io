@@ -24,6 +24,48 @@ section#comingSoon {
   animation-name: comingSoon;
   animation-duration: 15s;
 }
+ *{
+  margin: :0px;
+  padding: 0px;
+  font-family: 'tangerine', sans-serif;
+}
+  
+  #sidebar{
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  left: -200px;
+  transition: all 500ms linear;
+  opacity: 0.5;
+    
+}
+#sidebar.active {
+  left: 0px;
+}
+#sidebar ul li{
+  color:gold; 
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px;
+}
+
+#sidebar .toggle-btn{
+  position:inherit;
+  left: 10px;
+  top: 45px;
+  
+}
+#sidebar .toggle-btn span{
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: goldenrod;
+  margin: 5px 10px;
+}
+
+
+
 
 section#Container {
   text-align: center;
@@ -50,11 +92,48 @@ section#Container {
   }
 
   .myslides img {
-    width: 75%;
+    width: 50%;
     border-radius: 15px;
     border: 2px solid black;
     transition: 2s;
   }
+  *{
+  margin: :0px;
+  padding: 0px;
+  font-family: 'tangerine', sans-serif;
+}
+  
+  #sidebar{
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  left: -200px;
+  transition: all 500ms linear;
+  opacity: 0.5;
+}
+#sidebar.active {
+  left: 0px;
+}
+#sidebar ul li{
+  color:gold; 
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px;
+}
+
+#sidebar .toggle-btn{
+  position:inherit;
+  left: 10px;
+  top: 45px;
+}
+#sidebar .toggle-btn span{
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: goldenrod;
+  margin: 5px 10px;
+}
 }
 
 @keyframes slideshow {
