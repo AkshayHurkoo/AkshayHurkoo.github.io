@@ -21,10 +21,3 @@ function showSlides() {
 
 }
 
-function toggleSidebar() {
-  document.getElementById("sidebar").classList.toggle('active');
-  document.getElementById("sidebar").style.width = "200px";
-  document.getElementById("Container").style.marginLeft = "250px";
-  document.getElementById("comingSoon").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}

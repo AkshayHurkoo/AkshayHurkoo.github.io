@@ -11,61 +11,81 @@ h1 {
   text-align: center;
   color: gold;
   font-family: 'tangerine', sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   animation-name: h1;
-  animation-duration: 2s;
+  animation-duration: 8s;
+  margin-bottom:10px;
 }
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+  text-align: center;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 70px; /* Place content 60px from the top */
+    transition: 2s; /* 0.5 second transition effect to slide in the sidenav */
+  opacity: .9;
+}
+
+/* The navigation menu links */
+.sidenav a {  
+    padding: 20px 8px 10px;
+font-family: 'tangerine', sans-serif;
+  font-size: 45px;
+    color: gold;
+    display: flex;
+  justify-content: center;
+    transition: 1.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color:crimson;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.navbar {
+  color: gold;
+  font-family: 'tangerine',sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content:center;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  animation-name: fade;
+  animation-duration: 15s;
+  cursor:pointer;
+}
+
+.navbar :hover{
+  color:red;
+  transition: 1.3s;
+}
+
 
 section#comingSoon {
   text-align: center;
   color: gold;
   font-family: 'tangerine', sans-serif;
   font-size: 50px;
-  animation-name: comingSoon;
-  animation-duration: 15s;
+  animation-name: fade;
+  animation-duration: 20s;
 }
- *{
-  margin: :0px;
-  padding: 0px;
-  font-family: 'tangerine', sans-serif;
-}
-  
-  #sidebar{
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  background-color: black;
-  left: -200px;
-  transition: all 500ms linear;
-  opacity: 0.5;
-    
-}
-#sidebar.active {
-  left: 0px;
-}
-#sidebar ul li{
-  color:gold; 
-  list-style: none;
-  padding: 15px 10px;
-  border-bottom: 1px;
-}
-
-#sidebar .toggle-btn{
-  position:inherit;
-  left: 10px;
-  top: 45px;
-  
-}
-#sidebar .toggle-btn span{
-  display: block;
-  width: 30px;
-  height: 5px;
-  background-color: goldenrod;
-  margin: 5px 10px;
-}
-
-
-
 
 section#Container {
   text-align: center;
@@ -97,49 +117,12 @@ section#Container {
     border: 2px solid black;
     transition: 2s;
   }
-  *{
-  margin: :0px;
-  padding: 0px;
-  font-family: 'tangerine', sans-serif;
-}
-  
-  #sidebar{
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  background-color: black;
-  left: -200px;
-  transition: all 500ms linear;
-  opacity: 0.5;
-}
-#sidebar.active {
-  left: 0px;
-}
-#sidebar ul li{
-  color:gold; 
-  list-style: none;
-  padding: 15px 10px;
-  border-bottom: 1px;
-}
-
-#sidebar .toggle-btn{
-  position:inherit;
-  left: 10px;
-  top: 45px;
-}
-#sidebar .toggle-btn span{
-  display: block;
-  width: 30px;
-  height: 5px;
-  background-color: goldenrod;
-  margin: 5px 10px;
-}
 }
 
 @keyframes slideshow {
   from {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;
@@ -160,13 +143,12 @@ section#Container {
   }
 }
 
-@keyframes comingSoon {
+@keyframes fade {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-
 
   }
 }
