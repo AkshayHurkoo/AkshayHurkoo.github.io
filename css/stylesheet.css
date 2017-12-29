@@ -229,7 +229,8 @@ display: flex;
    width: 50%;
   height: 400px;
   margin-left: 25%;
-    margin-right: 25%;
+  margin-right: 25%;
+}
 }
 
 @keyframes slideshow {
