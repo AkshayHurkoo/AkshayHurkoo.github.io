@@ -3,8 +3,27 @@ body {
   padding: 0;
   background-image: url(../images/wallpaper.jpg);
   background-size: auto;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
+}
+
+.textCentre {
+  color: gold;
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+}
+
+.sitemap {
+  color: gold;
+  text-align: center;
+  font-size: 20px;
 }
 
 h1 {
@@ -12,10 +31,14 @@ h1 {
   color: gold;
   font-family: 'tangerine', sans-serif;
   font-size: 60px;
+  text-decoration: underline;
+  text-decoration-color: goldenrod;
+
   animation-name: h1;
   animation-duration: 8s;
-  margin-bottom:1px;
+  margin-bottom: 1px;
 }
+
 h2 {
   text-align: center;
   color: gold;
@@ -23,10 +46,12 @@ h2 {
   font-size: 45px;
   animation-name: h1;
   animation-duration: 8s;
-  margin-bottom:1px;
+  margin-bottom: 1px;
   margin-top: inherit;
+
 }
-p.paragraph{
+
+p.paragraph {
   color: gold;
   animation-name: fade;
   animation-duration: 10s;
@@ -34,71 +59,86 @@ p.paragraph{
   padding-left: 50px;
   padding-right: 50px;
 }
-section#map{
-   width: 95%;
+
+section#map {
+  width: 95%;
   height: 400px;
-   animation-name: fade;
+  animation-name: fade;
   animation-duration: 10s;
   margin-left: 10px;
-  
-  }
+
+}
 
 /* The side navigation menu */
+
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  position: fixed;
+  /* Stay in place */
   text-align: center;
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: black; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 70px; /* Place content 60px from the top */
-    transition: 2s; /* 2 second transition effect to slide in the sidenav */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: black;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 70px;
+  /* Place content 70px from the top */
+  transition: 2s;
+  /* 2 second transition effect to slide in the sidenav */
   opacity: .94;
 }
 
 /* The navigation menu links */
-.sidenav a {  
-    padding: 20px 8px 10px;
-font-family: 'tangerine', sans-serif;
+
+.sidenav a {
+  padding: 20px 8px 10px;
+  font-family: 'tangerine', sans-serif;
   font-size: 45px;
-    color: crimson;
-    display: flex;
+  color: crimson;
+  display: flex;
   justify-content: center;
-    transition: 1.3s;
+  transition: 1.3s;
 }
 
 /* When your mouse is over the navigation links, change their color to crimson */
+
 .sidenav a:hover {
-    color:gold;
+  color: gold;
 }
 
 /* Position and style the close button */
+
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 100px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 100px;
+  margin-left: 50px;
 }
 
 .navbar {
   color: crimson;
-  font-family: 'tangerine',sans-serif;
+  font-family: 'tangerine', sans-serif;
   font-size: 50px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   padding-bottom: 15px;
   margin-bottom: 10px;
   animation-name: fade;
   animation-duration: 15s;
-  cursor:pointer;
+  cursor: pointer;
+  text-decoration-line: underline;
+
 }
 
-.navbar :hover{
-  color:gold;
+.navbar :hover {
+  color: gold;
   transition: 1.3s;
 }
 
@@ -110,7 +150,10 @@ section#comingSoon {
   font-size: 50px;
   animation-name: fade;
   animation-duration: 20s;
+  text-decoration: underline;
+  text-decoration-color: goldenrod;
 }
+
 
 section#Container {
   text-align: center;
@@ -146,10 +189,10 @@ section#images {
 }
 
 /* Next & previous buttons */
+
 .prev,
 .next {
   cursor: pointer;
-  position:;
   top: 14%;
   width: 0;
   padding: 65px;
@@ -157,37 +200,50 @@ section#images {
   font-weight: bold;
   font-size: 20px;
   transition: 1.3s;
-   animation-name: fade;
+  animation-name: fade;
   animation-duration: 5s;
   transition: 2s;
 }
 
 
 /* On hover, add gold */
+
 .prev:hover,
 .next:hover {
   color: crimson;
 }
 
-.thumbnail{
+.thumbnail {
   width: 50%;
-  height: auto;
-  margin-top:5px;
-  margin-left: 75px;
-      border-radius: 15px;
-    border: 2px solid black;
-    animation-name: fade;
+  height: 100px;
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 2px solid black;
+  animation-name: fade;
   animation-duration: 5s;
   transition: 2s;
 }
-section#thumbnail-container{
-display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  
+
+section#thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+section#video {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.video {
+  width: 95%;
+  height: 420px;
 
 }
+
+
 /*media query, desktop*/
+
 @media only screen and (min-width:600px) {
   h1 {
     text-align: center;
@@ -201,36 +257,60 @@ display: flex;
     border: 2px solid black;
     transition: 2s;
   }
-  
-   .Slides img {
+
+  .Slides img {
     width: 50%;
-     height: auto;
+    height: auto;
     border-radius: 15px;
     border: 2px solid black;
     transition: 2s;
   }
-  .thumbnail{
-  width: 10%;
-  height: 10%;
-   transition: 2s;
+  .thumbnail {
+    width: 10%;
+    height: 10%;
+    transition: 2s;
 
-}
-  section#thumbnail-container{
+  }
+  section#thumbnail-container {
     display: flex;
-  flex-direction:row;
-        transition: 2s;
-  } 
-  p.paragraph{
-  color: white;
-  text-align: center;
- 
-}
-  section#map{
-   width: 50%;
-  height: 400px;
-  margin-left: 25%;
-  margin-right: 25%;
-}
+    flex-direction: row;
+    transition: 2s;
+  }
+  p.paragraph {
+    color: white;
+    text-align: center;
+
+  }
+  section#map {
+    width: 50%;
+    height: 400px;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .video {
+    width: 50%;
+    height: 420px;
+
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+  }
+
+  section#comingSoon {
+    text-align: center;
+    color: gold;
+    font-family: 'tangerine', sans-serif;
+    font-size: 50px;
+    animation-name: fade;
+    animation-duration: 20s;
+
+  }
+
 }
 
 @keyframes slideshow {
@@ -265,19 +345,5 @@ display: flex;
     opacity: 1;
 
   }
-  
-  
 
-  
-  
-  
 }
-
-
-
-
-
-
-
-
-
