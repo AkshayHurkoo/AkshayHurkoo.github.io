@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+<!--gets rid of URL and button bars if a SPA:-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+  <script type="text/javascript" src="../js/nav.js"></script>
+
+</head>
+<title>Hotel Name</title>
+
+
+<body>
+  <header>
+  <h1>Hotel Name</h1>
+
+  </header>
+  <nav class="navbar" onclick="openNav()">
+
+    <span>Menu</span>
+  </nav>
+
+  <section id="mySidenav" class="sidenav">
+    <ul>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#"> video </a>
+    </ul>
+  </section>
+     <h2>Location</h2>
+
+<section id="map">
+  
+  
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJGKCci7mgUKtrmZZfNk_ONbQO0OcGCPk&callback=initMap">
+</script>
+ <script type="text/javascript" src="../js/map.js"></script>
+  </section>
+  
+</body>
+
+
+<footer>
+
+</footer>
+
+</html>

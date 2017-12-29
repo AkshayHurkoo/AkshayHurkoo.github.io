@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+<!--gets rid of URL and button bars if a SPA:-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+  <script type="text/javascript" src="../js/nav.js"></script>
+
+
+
+</head>
+<title>Hotel Name</title>
+
+
+<body>
+  <header>
+  <h1>Hotel Name</h1>
+    <h2>Gallery</h2>
+
+  </header>
+  <nav class="navbar" onclick="openNav()"><span>Menu</span>
+  </nav>
+
+  <section id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="location.html">Location</a>
+    <a href="#">Contact</a>
+  </section>
+
+  <section id="images">
+
+    <section class="Slides">
+
+      <img src="../images/scale4.jpg">
+    </section>
+
+    <section class="Slides">
+
+      <img src="../images/scale5.jpg">
+    </section>
+
+    <section class="Slides">
+
+      <img src="../images/scale6.jpg">
+    </section>
+
+    <section class="Slides">
+      <img src="../images/scale7.jpg">
+    </section>
+
+    <section class="Slides">
+
+      <img src="../images/scale8.jpg">
+    </section>
+
+    <section class="Slides">
+
+      <img src="..images/scale9.jpg">
+    </section>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <script type="text/javascript" src="../js/Gallery.js"></script>
+ 
+  </section>
+
+  <section id="thumbnail-container">
+      <img class= "thumbnail" src="../images/scale1.jpg">
+      <img class= "thumbnail" src="../images/scale2.jpg">
+      <img class= "thumbnail" src="../images/scale3.jpg">
+      <img class= "thumbnail" src="../images/scale4.jpg">
+      <img class= "thumbnail" src="../images/scale5.jpg">
+       <img class= "thumbnail" src="../images/scale6.jpg">
+     <img class= "thumbnail" src="../images/scale7.jpg">
+     <img class= "thumbnail" src="../images/scale8.jpg">
+  </section>
+
+
+</body>
+
+
+<footer>
+
+</footer>
+
+</html>

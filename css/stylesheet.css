@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(images/wallpaper.jpg);
+  background-image: url(../images/wallpaper.jpg);
   background-size: auto;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-position: center;
 }
 
@@ -14,9 +14,34 @@ h1 {
   font-size: 60px;
   animation-name: h1;
   animation-duration: 8s;
-  margin-bottom:10px;
+  margin-bottom:1px;
 }
-
+h2 {
+  text-align: center;
+  color: gold;
+  font-family: 'tangerine', sans-serif;
+  font-size: 45px;
+  animation-name: h1;
+  animation-duration: 8s;
+  margin-bottom:1px;
+  margin-top: inherit;
+}
+p.paragraph{
+  color: gold;
+  animation-name: fade;
+  animation-duration: 10s;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+section#map{
+   width: 95%;
+  height: 400px;
+   animation-name: fade;
+  animation-duration: 10s;
+  margin-left: 10px;
+  
+  }
 
 /* The side navigation menu */
 .sidenav {
@@ -30,8 +55,8 @@ h1 {
     background-color: black; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 70px; /* Place content 60px from the top */
-    transition: 2s; /* 0.5 second transition effect to slide in the sidenav */
-  opacity: .9;
+    transition: 2s; /* 2 second transition effect to slide in the sidenav */
+  opacity: .94;
 }
 
 /* The navigation menu links */
@@ -39,28 +64,28 @@ h1 {
     padding: 20px 8px 10px;
 font-family: 'tangerine', sans-serif;
   font-size: 45px;
-    color: gold;
+    color: crimson;
     display: flex;
   justify-content: center;
     transition: 1.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
+/* When your mouse is over the navigation links, change their color to crimson */
 .sidenav a:hover {
-    color:crimson;
+    color:gold;
 }
 
-/* Position and style the close button (top right corner) */
+/* Position and style the close button */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 50px;
+    font-size: 100px;
     margin-left: 50px;
 }
 
 .navbar {
-  color: gold;
+  color: crimson;
   font-family: 'tangerine',sans-serif;
   font-size: 50px;
   display: flex;
@@ -73,7 +98,7 @@ font-family: 'tangerine', sans-serif;
 }
 
 .navbar :hover{
-  color:red;
+  color:gold;
   transition: 1.3s;
 }
 
@@ -104,6 +129,65 @@ section#Container {
 
 }
 
+section#images {
+  text-align: center;
+  position: relative;
+}
+
+.Slides img {
+  width: 95%;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid black;
+  animation-name: fade;
+  animation-duration: 5s;
+  transition: 2s;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position:;
+  top: 14%;
+  width: 0;
+  padding: 65px;
+  color: gold;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 1.3s;
+   animation-name: fade;
+  animation-duration: 5s;
+  transition: 2s;
+}
+
+
+/* On hover, add gold */
+.prev:hover,
+.next:hover {
+  color: crimson;
+}
+
+.thumbnail{
+  width: 50%;
+  height: auto;
+  margin-top:5px;
+  margin-left: 75px;
+      border-radius: 15px;
+    border: 2px solid black;
+    animation-name: fade;
+  animation-duration: 5s;
+  transition: 2s;
+}
+section#thumbnail-container{
+display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+
+}
+/*media query, desktop*/
 @media only screen and (min-width:600px) {
   h1 {
     text-align: center;
@@ -117,6 +201,35 @@ section#Container {
     border: 2px solid black;
     transition: 2s;
   }
+  
+   .Slides img {
+    width: 50%;
+     height: auto;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: 2s;
+  }
+  .thumbnail{
+  width: 10%;
+  height: 10%;
+   transition: 2s;
+
+}
+  section#thumbnail-container{
+    display: flex;
+  flex-direction:row;
+        transition: 2s;
+  } 
+  p.paragraph{
+  color: white;
+  text-align: center;
+ 
+}
+  section#map{
+   width: 50%;
+  height: 400px;
+  margin-left: 25%;
+    margin-right: 25%;
 }
 
 @keyframes slideshow {
@@ -151,4 +264,19 @@ section#Container {
     opacity: 1;
 
   }
+  
+  
+
+  
+  
+  
 }
+
+
+
+
+
+
+
+
+
