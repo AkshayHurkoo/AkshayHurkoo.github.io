@@ -7,17 +7,8 @@ body {
   background-position: center;
 }
 
-.textCentre {
+footer{
   color: gold;
-
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-
 }
 
 .sitemap {
